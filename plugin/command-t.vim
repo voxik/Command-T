@@ -68,7 +68,7 @@ endfunction
 
 function s:CommandTShowJumpFinder()
   if has('ruby')
-    ruby $command_t.show_jump_finder
+    CommandTRuby $command_t.show_jump_finder
   else
     call s:CommandTRubyWarning()
   endif
@@ -76,7 +76,7 @@ endfunction
 
 function s:CommandTShowTagFinder()
   if has('ruby')
-    ruby $command_t.show_tag_finder
+    CommandTRuby $command_t.show_tag_finder
   else
     call s:CommandTRubyWarning()
   endif
